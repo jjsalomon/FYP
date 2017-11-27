@@ -1,5 +1,10 @@
 {% extends 'layout.html' %}{% block body %}
 
-<h1> I am at index.html</h1>
-
+<h1>Upload CT Scan </h1>
+	<form action = "http://localhost:5000/uploaded" method = "POST" enctype = "multipart/form-data">
+        <input type = "file" name = "file" />
+        <input type = "submit"/>
+	</form>
+	
+<p> The file has been successfully uploaded </p>
 {% endblock %}
